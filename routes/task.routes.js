@@ -14,33 +14,33 @@ import {
 /********************** POST ROUTES ************************/
 
 /**
- *
+ * Post request creates a new task
  */
 router.post("/", auth, create_task);
 
 /********************** GET ROUTES ************************/
 
 /**
- *
+ * Get requests returns all tasks by the user
  */
 router.get("/", auth, get_tasks);
 
 /**
- *
+ * Get requests returns a task with given id
  */
 router.get("/:id", auth, get_task);
 
 /********************** PATCH ROUTES ************************/
 
 /**
- *
+ * Patch request updates task with given id
  */
 router.patch("/:id", auth, update_task);
 
 /********************** DELETE ROUTES ************************/
 
 /**
- *
+ * Delete request deletes task with given id
  */
 router.delete("/:id", auth, delete_task);
 
